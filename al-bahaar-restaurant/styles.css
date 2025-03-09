@@ -1,0 +1,411 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('assets/fonts/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('assets/fonts/Poppins-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Apply to text */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+
+/* Hero Section Custom Styling */
+.hero {
+    background: url('assets/images/hero.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fbf5f5;
+}
+.hero h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke: 2px black; /* Black outline */
+    text-transform: uppercase;
+}
+
+
+.hero-content h2 {
+    font-size: 3rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background-color: #f31212;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
+/* Menu Section */
+.menu-section {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+/* Menu Grid */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Menu Item */
+.menu-item {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+/* Menu Item Image */
+.menu-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Order Button */
+.btn-order {
+    display: inline-block;
+    background-color: #25D366; /* WhatsApp Green */
+    color: white;
+    padding: 8px 15px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn-order:hover {
+    background-color: #1ebe57;
+}
+
+
+
+/* Owners Section */
+.owners-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.owners-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.owner {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.owner img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.owner h3 {
+    margin: 10px 0;
+}
+
+.owner p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+}
+
+/* Staff Section (No Images) */
+.staff-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.staff-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.staff-member {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 220px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.staff-member h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.staff-member p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+}
+
+
+
+/* Contact Section */
+.contact-section {
+    padding: 50px 0;
+    background-color: #fafcff; /* Light background */
+    text-align: center;
+    color: #333; /* Dark text for better contrast */
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* Contact Form */
+.contact-section form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid black; /* Black border */
+    border-radius: 5px;
+    font-size: 1rem;
+    background: white;
+    color: #333;
+}
+
+.contact-section textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contact-section button {
+    background: #d9230f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-section button:hover {
+    background: #b71c0c;
+}
+
+
+/* footer */
+
+/* Footer Styling */
+footer {
+    background-color: #333;  /* Dark background color */
+    color: white;            /* White text color */
+    padding-top: 50px;       /* Padding at the top */
+    padding-bottom: 30px;    /* Padding at the bottom */
+}
+
+/* Footer Links Styling */
+footer a {
+    text-decoration: none; /* Remove underline from links */
+    color: white;          /* Make links white */
+    transition: color 0.3s; /* Smooth transition on hover */
+}
+
+/* Hover effect on footer links */
+footer a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+/* Social Media Icons in Footer */
+.social-icon-img {
+    width: 40px;  /* Icon size */
+    height: auto; /* Keep the aspect ratio */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.social-icon-img:hover {
+    transform: scale(1.2); /* Increase size on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+  
+
+
+ /* Gallery Section */
+.gallery-section {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Individual Gallery Item */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* About Section */
+.about, .menu, .gallery, .testimonials, .contact {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+/* Menu Preview */
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-item img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Gallery Preview */
+.gallery-grid {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Testimonials */
+.testimonial {
+    margin: 20px auto;
+    max-width: 500px;
+    font-style: italic;
+}
+
+/* Contact Section */
+.contact {
+    background: #f8f9fa;
+    padding: 40px 0;
+}
